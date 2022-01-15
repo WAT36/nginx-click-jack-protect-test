@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  nginx:
+    build: ./docker/nginx
+    ports:
+      - 10088:80
+    volumes:
+      - ./src:/var/www
